@@ -1,0 +1,6 @@
+<label>Add Username:</label>
+<input type="text" placeholder="Add Username" [(ngModel)]="username" />
+<br>
+<label>Your user name is: {{username}}</label>
+<br>
+<button [disabled]="!username" (click)="onResetUser()">Reset</button>

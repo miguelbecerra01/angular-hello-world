@@ -1,0 +1,7 @@
+<button (click)="onToggleDetails()">Toggle Details</button>
+<p>You have clicked {{clickCounterList.length}} times</p>
+<p *ngIf="showDetails">Secret values: password : tuna</p>
+
+<div *ngFor="let item of clickCounterList; let i = index" [ngStyle]="{backgroundColor:getColor(i)}"
+    [ngClass]="{fifth: i >= 5}">
+    {{item}}</div>

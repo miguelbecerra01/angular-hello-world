@@ -1,0 +1,7 @@
+<!-- property binding where we are binding to a property of a directive -->
+<!-- the [] tells that we are using a databinding -->
+<!-- show text color white and background green if the serverstatus is online -->
+<!-- applyin css classes dynamically with ngClass -->
+<p [ngStyle]="{backgroundColor:getColor()}" [ngClass]="{online: serverStatus === 'online'}">
+    {{'Server'}} id: {{serverId}} status:{{serverStatus}}
+</p>
